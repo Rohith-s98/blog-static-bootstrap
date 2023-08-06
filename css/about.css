@@ -1,0 +1,5 @@
+.carousel-inner img {
+    margin: 20px;
+    max-width: 100%;
+    max-height: 500px; /* Adjust the height as per your requirement */
+  }

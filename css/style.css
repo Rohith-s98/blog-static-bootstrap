@@ -1,0 +1,25 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+@media(max-width:500px){
+    .blog-img{
+        .blog-img {
+            width: 100%;
+            height: 30vw;
+            object-fit: cover;
+        }
+    }
+    .posts {
+        margin: auto;
+    }
+}
+.blog-img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.card {
+    height:450px ;
+}

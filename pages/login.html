@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>Login</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/album/"
+    /> -->
+
+    <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <header class="main_header mb-5">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+          <div class="container ">
+              <a href="../index.html" class="navbar-brand "><img src="../images/RS_Logo-circle.png" width="30" height="30" alt=""> Blog</a>
+              <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </nav>
+      </header>
+    <section class="vh-100">
+        <div class="container-fluid h-custom p-5 my-3">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="../images/login.png"
+                class="img-fluid" alt="Sample image">
+            </div>
+           
+            <div class="card col-md-8 col-lg-6 col-xl-4 offset-xl-1 p-5 shadow-lg p-3 mb-5 bg-body rounded">
+              <form >
+                <div id="message" class="alert alert-danger" style="display: none"></div>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="email" class="form-control form-control-lg"
+                    placeholder="Email address" />
+                </div>
+      
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                  <input type="password" id="password" class="form-control form-control-lg"
+                    placeholder="Password" />
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label" for="form2Example3">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="#!" class="text-body">Forgot password?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" class="btn btn-dark btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="return loginHandler()">Login</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="../pages/signup.html"
+                      class="link-danger">Register</a></p>
+                </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; RS WebDev</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </div>
+    <script src="../jS/login.js"></script>
+</body>

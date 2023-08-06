@@ -9,14 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!--navbar-->
     <header class="main_header">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark  fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand ">RS Blog</a>
+            <a href="#" class="navbar-brand "><img src="./images/RS_Logo-circle.png" width="30" height="30" alt=""> Blog</a>
             <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,16 +26,21 @@
                         <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About </a>
+                        <a href="./pages/about.html" class="nav-link">About </a>
                     </li>
                     <li class="nav-item ">
                         <a href="#contact" class="nav-link">Contact Us</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="#instructors" class="nav-link" data-bs-toggle="modal" data-bs-target="#survey">Sign Up</a>
+                        <a href="./pages/login.html" class="nav-link" >Login</a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex g-2">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
             </div>
+            
         </div>
     </nav>
             
@@ -52,7 +57,7 @@
                     <h1>Ultimate Destination for</h1>
                     <h1><span class="text-warning">Web Developers</span></h1>
                     <p class="lead py-5">
-                        Welcome to "WebDev Insights" - Your one-stop blog for all things web development! Join our vibrant community, gain valuable insights, stay up-to-date with cutting-edge frameworks, and ignite your passion for all things web development! Let's embark on an exciting journey of creativity and innovation together!
+                        Welcome to "WebDev Insights" - Your one-stop blog for all things on web development! Join our vibrant community, gain valuable insights, stay up-to-date with cutting-edge frameworks, and ignite your passion for all things web development! Let's embark on an exciting journey of creativity and innovation together!
                     </p>
                 </div>
                 <img class="img-fluid w-50  d-none d-sm-block" src="./images/showcase.svg" alt="">
@@ -99,7 +104,7 @@
                                 <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
                             </div>
                             <div>
-                                <button class="left_div__reply" >View</button>
+                                <a href="./pages/angular.html"><button class="left_div__reply" >View</button></a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +132,7 @@
                                 <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
                             </div>
                             <div>
-                                <button class="left_div__reply" >View</button>
+                                <a href="./pages/react.html"><button class="left_div__reply" >View</button></a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +160,7 @@
                                 <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
                             </div>
                             <div>
-                                <button class="left_div__reply" >View</button>
+                                <a href="./pages/vue.html"><button class="left_div__reply" >View</button></a>
                             </div>
                         </div>
                     </div>
@@ -183,7 +188,7 @@
                                 <button class="left_div__like" id="like_btn"><i class="fa fa-thumbs-up"></i>Like</button>
                             </div>
                             <div>
-                                <button class="left_div__reply" >View</button>
+                                <a href="./pages/node.html"><button class="left_div__reply" >View</button></a>
                             </div>
                         </div>
                     </div>
@@ -268,42 +273,9 @@
             <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
         </div>
     </section>
-    <!-- Modal -->
-<div class="modal fade" id="survey" tabindex="-1" >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">Please provide your details</p>
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">First Name</label>
-            <input id="first-name"type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">Last Name</label>
-            <input id="first-name"type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">Mob:</label>
-            <input id="first-name"type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">password:</label>
-            <input id="first-name"type="password" class="form-control">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
